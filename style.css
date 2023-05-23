@@ -1,0 +1,65 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    margin: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: brown;
+    grid-area: 1 / 1 / 11 / 2;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.abajoIzquierda, .arribaIzquierda, .arribaDerecha, .abajoDerecha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.content {
+    display: grid;
+    grid-area: 2 / 2 / 11 / 5;
+    grid-template-columns: 2fr 1fr;
+    margin: 2%;
+}
+
+.projectsCon{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px
+}
+
+.projectsCon > div {
+    background-color: aquamarine;
+    border-radius: 10%;
+    padding: 10%;
+    border-left: 5px solid orange;
+}
+
+.announcements {
+    background-color: aquamarine;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+.contentDerecha {
+    margin: 2%;
+}
+
+.trendingCon{
+    background-color: aquamarine;
+    border-radius: 10%;
+    padding: 10%;
+}
